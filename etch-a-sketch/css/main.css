@@ -1,0 +1,66 @@
+body {
+	background-color: #6f6f6f;
+}
+
+header {
+	text-align: center;
+	font-size: 24px;
+	padding: 1rem;
+}
+
+#container {
+	width: 960px;
+  	margin: auto;
+}
+
+#sketch {
+	width: 640px;
+	height: 640px;
+	font-size: 0;
+	background-color: #fff;
+	float: left;
+	margin: auto;
+	display: block;
+}
+
+#controlArea {
+	width: 225px;
+	float: right;
+	padding-top: 25%;
+}
+
+#gridSize, #controls {
+	text-align: justify;
+	font-size: 20px;
+
+}
+
+#controls li {
+	list-style: none;
+	margin-top: 5px;
+	display: block;
+}
+
+.button {
+	background-color: #000;
+	color: #fff;
+	box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.block { 
+	background-color: #000;
+	display: inline-block;
+	margin: 0;
+}
+
+.selectedA, .selectedB {
+	background-color: #fff;
+	color: #000;
+}

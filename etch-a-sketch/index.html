@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Etch-A-Sketch</title>
+	<link rel="stylesheet" type='text/css' href="css/normalize.css">
+	<link rel="stylesheet" type='text/css' href="css/main.css">
+</head>
+<header>Etch-A-Sketch Project - By: Ryan Jordan</header>
+<body>
+	<div id="container">
+		<div id="sketch"></div>
+		<div id="controlArea">
+			<div id="gridSize">
+				<button class='button gridButton' id='16' onClick='grid16();'>16x16</button>
+				<button class='button gridButton' id='32' onClick='grid32();'>32x32</button>
+				<button class='button gridButton' id='64' onClick='grid64();'>64x64</button>
+			</div>
+			<div id="controls">
+				<ul>
+					<li><button class='button controlButton' id='shake' onClick='shake();'>Shake</button></li>
+					<li><button class='button controlButton' id='white' onClick='white(); shake();'>White</button></li>
+					<li><button class='button controlButton' id='trail' onClick='trail(); shake(); '>Trail</button></li>
+					<li><button class='button controlButton' id='gradient' onClick='gradient(); shake();'>Gradient</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type='text/javascript' src='js/index.js'></script>
+</body>
+</html>
