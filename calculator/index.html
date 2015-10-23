@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="grid-pad">
+		<div class="grid">
+			<div class="col-17-20"><input type="text" id="screen" placeholder="0"></div>
+		</div>
+		<div class="grid">
+			<div id="clear" class="operators col-2-16"><button onclick="operators('clear')">CLR</button></div>
+			<div class="invalid col-2-16"><button></button></div>
+			<div class="invalid col-2-16"><button></button></div>
+			<div id="divide" class="operators col-2-16"><button onclick="operators('divide')" onkeydown="operators('divide')">/</button></div>
+		</div>
+		<div class="grid">
+			<div id="7" class="numbers col-2-16"><button onclick="buttonPress('7')">7</button></div>
+			<div id="8" class="numbers col-2-16"><button onclick="buttonPress('8')">8</button></div>
+			<div id="9" class="numbers col-2-16"><button onclick="buttonPress('9')">9</button></div>
+			<div id="multiply" class="operators col-2-16"><button onclick="operators('multiply')">*</button></div>
+		</div>
+		<div class="grid">
+			<div id="4" class="numbers col-2-16"><button onclick="buttonPress('4')">4</button></div>
+			<div id="5" class="numbers col-2-16"><button onclick="buttonPress('5')">5</button></div>
+			<div id="6" class="numbers col-2-16"><button onclick="buttonPress('6')">6</button></div>
+			<div id="subtract" class="operators col-2-16"><button onclick="operators('subtract')">-</button></div>
+		</div>
+		<div class="grid">
+			<div id="1" class="numbers col-2-16"><button onclick="buttonPress('1')">1</button></div>
+			<div id="2" class="numbers col-2-16"><button onclick="buttonPress('2')">2</button></div>
+			<div id="3" class="numbers col-2-16"><button onclick="buttonPress('3')">3</button></div>
+			<div id="add" class="operators col-2-16"><button onclick="operators('add')">+</button></div>
+		</div>
+		<div class="grid">
+			<div id="0" class="numbers col-2-16"><button onclick="buttonPress('0')">0</button></div>
+			<div class="invalid col-2-16"><button></button></div>
+			<div class="invalid col-2-16"><button></button></div>
+			<div id="equal" class="operators col-2-16"><button onclick="operators('equal')">=</button></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>
