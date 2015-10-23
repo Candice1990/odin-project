@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake-Clone</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<div class="heading">
+		<h2><span id="score"></span> By: Ryan Jordan</h2>
+
+	</div>
+	<div id="board">
+		<div class="menu">
+			<h2>Snake Clone</h2>
+			<p><span>Instructions:</span><br/><br/> Use the arrow keys on your keyboard to control the snake. Don't run into the edge of the board or try to through the body of your snake. Run your snake into the food to make your snake and score grow. Good luck!</p>
+			<div class="button"><a href="#" id="play">Play</a></div>
+		</div>
+		<div class="gameover">
+			<h2>Game Over!</h2>
+			<p>You didn't follow directions! Better luck next time! Your score was: <span id="playerScore"></span> .</p>
+			<div class="button"><a href="#" id="restart">Restart</a> <a href="#" id="menu">Menu</a></div>
+		</div>
+	</div>
+	
+</body>
+</html>

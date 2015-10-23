@@ -1,0 +1,102 @@
+@import 'reset';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #6f6f6f;
+	
+	.heading {
+		width: 640px;
+		height: 40px;
+		margin: 15px auto 5px;
+		text-align: right;
+		font-size: 20px;
+		color: #000;
+
+		#score {
+			float: left;
+		}
+	}
+
+	#board {
+		width: 640px;
+		height: 640px;
+		font-size: 0;
+		margin: auto;
+		display: block;
+
+		.grid {
+			display: inline-block;
+			margin: 0;
+		}
+
+		.menu {
+			text-align: center;
+			font-size: 22px;
+			color: darken(#fff, 20%);
+			letter-spacing: 1px;
+			line-height: 16px;
+			position: relative;
+			width: 640px;
+			height: 320px;
+			margin: 50px auto;
+			border: 1px solid #fff;
+			background-color: black;
+
+			h2 {
+				padding: 20px 0;
+			}
+
+			p {
+				font-size: 16px;
+				text-align: left;
+				padding: 20px 50px;
+
+				span {
+					color: #fff;
+					font-size: 18px;
+				}
+
+			}
+
+			.button {
+				padding: 50px;
+				
+				a {
+					text-decoration: none;
+					color: #fff;
+					padding: 5px 20px;
+					margin: 10px;
+					border: 1px solid #fff;
+					display: inline;
+					width: 50px;
+				}
+
+				:hover {
+					color: #000;
+					background-color: #fff;
+				}
+				
+
+			}
+		}
+		
+		.gameover {
+			@extend .menu;
+
+			h2 {
+				padding: 20px 0;
+			}
+
+			p {
+				font-size: 16px;
+				text-align: left;
+				padding: 20px 50px;
+			}
+
+			
+		}
+	}
+}

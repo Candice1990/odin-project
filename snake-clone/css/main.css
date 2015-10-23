@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #6f6f6f; }
+  body .heading {
+    width: 640px;
+    height: 40px;
+    margin: 15px auto 5px;
+    text-align: right;
+    font-size: 20px;
+    color: #000; }
+    body .heading #score {
+      float: left; }
+  body #board {
+    width: 640px;
+    height: 640px;
+    font-size: 0;
+    margin: auto;
+    display: block; }
+    body #board .grid {
+      display: inline-block;
+      margin: 0; }
+    body #board .menu, body #board .gameover {
+      text-align: center;
+      font-size: 22px;
+      color: #cccccc;
+      letter-spacing: 1px;
+      line-height: 16px;
+      position: relative;
+      width: 640px;
+      height: 320px;
+      margin: 50px auto;
+      border: 1px solid #fff;
+      background-color: black; }
+      body #board .menu h2, body #board .gameover h2 {
+        padding: 20px 0; }
+      body #board .menu p, body #board .gameover p {
+        font-size: 16px;
+        text-align: left;
+        padding: 20px 50px; }
+        body #board .menu p span, body #board .gameover p span {
+          color: #fff;
+          font-size: 18px; }
+      body #board .menu .button, body #board .gameover .button {
+        padding: 50px; }
+        body #board .menu .button a, body #board .gameover .button a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px 20px;
+          margin: 10px;
+          border: 1px solid #fff;
+          display: inline;
+          width: 50px; }
+        body #board .menu .button :hover, body #board .gameover .button :hover {
+          color: #000;
+          background-color: #fff; }
+    body #board .gameover h2 {
+      padding: 20px 0; }
+    body #board .gameover p {
+      font-size: 16px;
+      text-align: left;
+      padding: 20px 50px; }
+
+/*# sourceMappingURL=main.css.map */
