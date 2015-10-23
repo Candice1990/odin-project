@@ -1,0 +1,109 @@
+/********** body **********/
+
+html, body {
+	background-color: #f1f1f1;
+	font-family: arial, sans-serif;
+}
+
+#container {
+	margin: 10px 180px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #0066ff:;
+}
+
+/********** header **********/
+
+header {
+	background-color: #fff;
+	position: fixed;
+	border-bottom: 1px solid #e2e2e2;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	z-index: 4;
+}
+
+.logo {
+	height: 35px;
+	padding: 5px;
+	margin-left: 30px;
+	float: left;
+}
+
+#search {
+	min-width: 700px;
+	position: relative;
+	left: 100px;
+
+}
+
+#search form input {
+	width: 583px;
+	height: 27px;
+}
+
+#search-btn {
+	position: relative;
+	width: 65px;
+	height: 33px;
+	border: 1px solid #d3d3d3;
+	background-color: #f1f1f1;
+	margin-left: -6px;
+	top: 6px;
+}
+
+/********* Video Area **********/
+
+#video, #title, #description {
+	float: left;
+
+}
+
+#title, #description {
+	width: 640px;
+	margin-top: 10px;
+	position: relative;
+	top: 70px;
+}
+
+#video {
+	position: relative;
+	top: 50px;
+}
+
+
+/********** Aside *********/
+
+aside {
+	float: right;
+	position: relative;
+	top: -473px;
+
+}
+
+
+/********** footer **********/
+
+footer {
+	clear: both;
+}
+
+footer ul li {
+	clear: both;
+	list-style-type: none;
+	display: inline-block;
+	margin: 15px;
+}
+
+#footer-2 {
+	position: relative;
+	top: -40px;
+}
