@@ -1,0 +1,91 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #e6e6e6; }
+
+.container {
+  width: 610px;
+  margin: 0 auto; }
+  .container h1 {
+    text-align: center;
+    font-size: 52px;
+    margin: 10px; }
+  .container .instructions #play, .container .instructions #player-left, .container .instructions #player-right {
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 5px;
+    background-color: #00f; }
+    .container .instructions #play:hover, .container .instructions #player-left:hover, .container .instructions #player-right:hover {
+      background: #0f0; }
+  .container .instructions #player-left, .container .instructions #player-right {
+    width: 49.5%;
+    display: inline-block;
+    margin-top: 0; }
+  .container #board {
+    font-size: 0; }
+    .container #board .tiles {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-size: 182px; }
+      .container #board .tiles:hover {
+        background-color: gray; }
+    .container #board .left {
+      border-right: 10px solid #000; }
+    .container #board .center {
+      border-left: 10px solid #000;
+      border-right: 10px solid #000; }
+    .container #board .right {
+      border-left: 10px solid #000; }
+    .container #board .top {
+      border-bottom: 10px solid #000; }
+    .container #board .middle {
+      border-top: 10px solid #000;
+      border-bottom: 10px solid #000; }
+    .container #board .bottom {
+      border-top: 10px solid #000; }
+
+/*# sourceMappingURL=main.css.map */

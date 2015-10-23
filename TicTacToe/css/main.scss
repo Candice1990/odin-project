@@ -1,0 +1,101 @@
+@import 'reset';
+
+$border: 10px solid #000;
+$font: 26px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: darken(#fff, 10%);
+}
+
+.container {
+	width: 610px;
+	margin: 0 auto;
+
+	h1 {
+		text-align: center;
+		font-size: $font * 2;
+		margin: 10px;
+	}
+	
+	.instructions {
+
+		#play {
+			text-align: center;
+			font-size: $font;
+			width: 100%;
+			margin: 5px 0;
+			padding: 5px 5px;
+			background-color: #00f;
+
+			&:hover {
+				background: #0f0;
+			}			
+
+		}
+
+		#player-left {
+			@extend #play;
+			width: 49.5%;
+			display: inline-block;
+			margin-top: 0;
+		}
+
+		#player-right {
+			@extend #player-left;
+		}
+		
+		
+	}
+	
+	
+	
+
+	#board {
+		font-size: 0; // font-size: 0 to clear unwanted white space in between divs.
+
+		.tiles {
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			font-size: $font * 7;
+
+			&:hover {
+				background-color: darken(#fff, 50%);
+			}
+		}
+
+		.left {
+			border-right: $border;
+		}
+
+		.center {
+			border-left: $border;
+			border-right: $border;
+		}
+
+		.right {
+			border-left: $border;
+		}
+
+		.top {
+			border-bottom: $border;
+		}
+
+		.middle {
+			border-top: $border;
+			border-bottom: $border;
+		}
+
+		.bottom {
+			border-top: $border;
+		}
+
+	}
+}
