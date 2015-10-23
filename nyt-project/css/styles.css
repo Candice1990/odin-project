@@ -1,0 +1,430 @@
+/****************************
+			Fonts
+*****************************/
+
+@font-face {
+	font-family: 'opensans';
+	src: url('fonts/OpenSans-Light.ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'opensans';
+	src: url('fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'opensans';
+	src: url('fonts/OpenSans-Bold.ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'opensans';
+	src: url('fonts/OpenSans-ExtraBold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?i72zc1');
+	src:url('fonts/icomoon.eot?#iefixi72zc1') format('embedded-opentype'),
+		url('fonts/icomoon.woff?i72zc1') format('woff'),
+		url('fonts/icomoon.ttf?i72zc1') format('truetype'),
+		url('fonts/icomoon.svg?i72zc1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+	content: "\e96b";
+}
+
+.icon-search:before {
+	content: "\e986";
+}
+
+.icon-cog:before {
+	content: "\e994";
+}
+
+.icon-menu:before {
+	content: "\e9bd";
+}
+
+.icon {
+	padding-right: 5px;
+}
+
+.icon > img {
+	height: 18px;
+}
+
+/****************************
+			General
+*****************************/
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font: 400 16px/22px 'opensans', arial, helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #326891;
+}
+
+.bottom-header a, .p-footer a {
+	color: #333;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	margin-left: 30px;
+}
+
+
+/****************************
+			Header
+*****************************/
+
+header {
+	border: 1px solid #e2e2e2;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding-top: 8px;
+}
+
+header button {
+	font-size: 11px;
+}
+
+header button:first-child {
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+	padding-right: 15px;
+}
+
+.header-left {
+	float: left;
+	position: relative;
+	left: -15px;
+
+}
+
+.header-left > button {
+	color: #333;
+	font-weight: 700;
+	border: 1px solid transparent;
+	margin-left: 3px;
+	background-color: #fff;
+	height: 30px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	line-height: 0.8125rem;
+	border-radius: 3px;
+}
+
+.header-left > button:hover {
+	background-color: #e2e2e2;
+	cursor: pointer;
+}
+
+header img {
+	vertical-align: baseline;
+	padding-top: 5px;
+}
+
+.header-right {
+	float: right;
+	padding: 0 10px 10px;
+}
+
+.header-right > .btn {
+	font-weight: 700;
+	border: 1px solid #265E8B;
+	border-radius: 3px;
+	margin-right: 8px;
+	color: #fff;
+	background-color: #6288A5;
+	height: 30px;
+	padding-right: 5px;
+}
+
+.header-right > .btn:hover {
+	background-color: #326891;
+}
+
+.cog {
+	border: none;
+	background-color: inherit;
+	font-size: 16px;
+	color: gray;
+	padding-right: 100px;
+}
+
+.bottom-header {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #cecece;
+	margin: 0;
+	width: 1800px;
+}
+
+.bottom-header ul {
+	margin: 0;
+	padding: 0;
+}
+
+.bottom-header ul li {
+	list-style-type: none;
+	display: inline-block;
+	max-width: 249px;
+	max-height: 85px;
+	border-left: 0;
+	border-top: 0;
+	border-bottom: 0;
+	border-right: 1px;
+	border-style: solid;
+	border-color: #cecece;
+}
+
+.bottom-header a {
+	text-decoration: none;
+	font-size: 0.8125rem;
+	line-height: 1rem;
+	font-weight: 400;
+}
+
+.bottom-header a:hover {
+	text-decoration: underline;
+}
+
+.left-img {
+	float: left;
+	padding: 5px;
+}
+
+
+/****************************
+			Main
+*****************************/
+
+.main {
+	margin: 0 auto;
+	max-width: 1050px;
+}
+
+.heading a {
+	text-decoration: none;
+	color: #000;
+}
+
+.heading a:hover {
+	text-decoration: underline;
+}
+
+.heading {
+	border-top: 1px solid #000;
+	margin-top: 50px;
+}
+
+.heading h6 {
+	margin: 0;
+}
+
+.heading h6:first-child {
+	float: left;
+}
+
+.heading h6:nth-child(2) {
+	float: right;
+	font-weight: 300;
+}
+
+.title {
+	margin-top: 50px;
+	margin-bottom: 0;
+	padding-bottom: 25px;
+	text-align: left;
+	border-bottom: 1px solid #cecece;
+}
+
+.author {
+	margin-top: 0;
+	padding: 10px 0 20px;
+}
+
+
+.main figure {
+	margin: 0;
+}
+
+figcaption, .article-caption {
+	max-width: 675px;
+	font-size: small;
+	color: #666;
+}
+
+.smaller {
+	font-size: smaller;
+}
+
+.main p, .main h4, .article-img, .article-caption {
+	max-width: 536px;
+	margin-left: 135px;
+}
+
+.img-border {
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	padding: 10px 0 10px;
+}
+
+.video {
+	padding: 25px 0 25px 100px;
+}
+
+.empty-div {
+	border-top: 1px solid #000;
+	margin-left: 135px;
+	max-width: 5%;
+}
+
+.p-footer {
+	padding-bottom: 25px;
+	font-size: x-small;
+}
+
+/****************************
+			Footer
+*****************************/
+
+footer {
+	border-top: 2px double #cecece;
+	padding: 10px 0;
+}
+
+footer div {
+	display: inline;
+}
+
+footer li {
+	list-style-type: none;
+}
+
+footer img {
+	float: left;
+}
+
+footer a {
+	color: #000;
+}
+
+footer a:nth-child(2) {
+	float: right;
+	font-size: x-small;
+}
+
+.footer-header {
+	padding-bottom: 5px;
+	font-weight: 600;
+}
+
+.upper-footer ul {
+	padding: 35px 10px 0 0;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	left: -185px;
+}
+
+footer ul li {
+	font-size: small;
+	padding-right: 20px;
+	color: #000;
+}
+
+.right-footer {
+	float: right;
+	position: relative;
+	top: -385px;
+	border-left: 1px solid #cecece;
+}
+
+.subscribe li {
+	font-weight: 700;
+}
+
+.mobile {
+	border-top: 1px solid #cecece;
+	padding-top: 5px;
+}
+
+.email li, .mobile li {
+	font-size: x-small;
+}
+
+.bottom-footer li {
+	font-size: x-small;
+	display: inline-block;
+}
+
+.bottom-left {
+	position: relative;
+	left: -45px;
+}
+
+.bottom-left li {
+	padding: 0 5px 0 0;
+	border-right: 1px solid #cecece;
+}
+
+.bottom-left li:last-child {
+	border: none;
+}
+
+.bottom-right {
+	float: right;
+	position: relative;
+	right: -210px;
+	top: -55px;
+}
+
+.bottom-right li {
+	padding: 0 0 0 5px;
+	border-left: 1px solid #cecece;
+}
+
+.bottom-right li:first-child {
+	border: none;
+}
