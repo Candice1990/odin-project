@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+	<title>HTML - Forms Project</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="img/Mintcom.png" alt="Mint logo">
+			<div class="nav">
+				<ul>
+					<li><a href="#">Log in</a></li>
+					<li>|</li>
+					<li><a href="#"><strong>Sign up</strong></a></li>
+				</ul>
+			</div><!-- nav -->
+		</div><!-- header -->
+		<div class="form-container">
+			<div class="left-container">
+				<form id="myForm">
+					<h1>Create a new account</h1>
+					<label for="email">Your Email</label><br />
+						<input type="email" name="email" id="email" class="input" autofocus>
+						<br /><br />
+					<label for="confirmEmail">Confirm Email</label><br />
+						<input type="email" name="confirmEmail" class="input" id="confirmEmail">
+						<br /><br />
+					<label for="country">Country</label><br />
+						<select name="country" id="country">
+							<optgroup label="Available now:">
+								<option value="unitedStates">United States</option>
+								<option value="canada">Canada</option>
+							</optgroup>
+						</select>
+						<br /><br />
+					<label for="zipcode">Zip Code</label><br />
+						<input type="text" name="zipcode" class="zipcode input" id="zipcode">
+						<br /><br />
+					<label for="password">Password</label><br />
+						<input type="password" name="password" class="input" id="password">
+						<br /><br />
+					<label for="confirmPassword">Confirm Password</label><br />
+						<input type="password" name="confirmPassword" class="input" id="confirmPassword"><br /><br />
+					<label for="terms" id="terms"><small> Yes, I agree to the Mint <a href="#">Terms of Use</a>.</small></label>
+						<input type="checkbox" name="terms" class="checkbox" id="terms">
+						<br /><br />
+						<input type="submit" value="Sign up" id="submit">
+				</form>
+			</div>
+			<div class="rightSide">
+				<ul>
+					<h2>Why you'll love it</h2>
+					<li><small>See all your accounts in one place</small></li>
+					<li><small>Set a budget and pay down your debt</small></li>
+					<li><small>Find the best ways to grow your money</small></li>
+					<li><small>Stay <a href="#">safe and secure</a></small></li>
+				</ul>
+			</div>
+		</div><!-- form-container -->
+		<footer>
+			<ul id="footer-links">
+				<li><a href="#">Support Community</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Legal and Trademark Notices</a></li>
+				<li><a href="#">About Intuit</a></li>
+			</ul>
+			<br />
+			<ul id="footer-logos">
+				<li><img src="img/NortonSecured.gif" alt="Norton Secured"></li>
+				<li><img id="trust" src="img/truste.jpg" alt="Truste Certified Privacy"></li>
+			</ul>
+			<br />
+			<ul id="copyright">
+				<li>&copy; 2014 Intuit, Inc.</li>
+				<li> | </li>
+				<li>ph6667.20 - spa47.14</li>
+			</ul>
+		</footer>
+	</div><!-- container -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

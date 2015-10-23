@@ -1,0 +1,184 @@
+/********** General **********/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: rgb(51, 51, 51);
+}
+
+.container {
+	margin: 0 auto;
+	width: 690px;
+}
+
+
+
+/********** Header & Nav *********/
+
+.header img {
+	margin-top: 50px;
+}
+
+.nav li {
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	padding: 5px;
+	position: relative;
+	top: -45px;
+
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+
+.nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/********** Form Container **********/
+
+input.error {
+	border: 1px solid #f00;
+	padding: 0;
+	margin: 0;
+}
+
+input.valid {
+	border: 1px solid #0f0;
+}
+
+.error {
+	color: #f00;
+	display: block;
+	font-size: 10px;
+}
+
+.form-container h1 {
+	font-size: 28px;
+}
+
+.form-container {
+	height: 700px;
+	padding: 30px 50px 200px 50px;
+	-webkit-box-shadow: 0px 3px 6px -1px rgba(0,0,0,0.75);
+	   -moz-box-shadow: 0px 3px 6px -1px rgba(0,0,0,0.75);
+			box-shadow: 0px 3px 6px -1px rgba(0,0,0,0.75);
+}
+
+.left-container {
+	float: left;
+	border-right: 1px solid #ccc;
+	padding-right: 55px;
+}
+
+.input, select, option {
+	width: 260px;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 3px 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border: 1px solid #ccc;
+}
+
+.input:focus {
+	border-color: #b8b8b8;
+}
+
+label {
+	font-weight: 600;
+}
+
+#checkbox, #footer-links li, #copyright {
+	font-weight: 300;
+}
+
+input[type=checkbox] {
+    float: left;
+    margin-right: 0.4em;
+}
+
+input[id=zipCode] {
+	width: 100px;
+}
+
+#submit {
+	padding: 4px 14px;
+	background-color: #f89406;
+	color: #fff;
+	line-height: 20px;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 12px;
+	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	   -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	   		box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 10px;
+}
+
+.rightSide {
+	background-color: #f5f5f5;
+	color: #666;
+	height: 180px;
+	width: 200px;
+	padding-right: 20px;
+	float: right;
+	margin-top: 50px;
+
+}
+
+.rightSide h2 {
+	font-size: 20px;
+}
+
+.rightSide li {
+	font-size: 12px;
+}
+
+/********* Footer **********/
+
+footer {
+	clear: both;
+}
+
+footer li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+#trust {
+	padding-bottom: 25px;
+}
+
+#footer-logos, #copyright, #footer-links {
+	text-align: center;
+}
+
+#footer-links li {
+	list-style-type: none;
+	text-decoration: none;
+	color: rgb(51,51,51);
+	font-size: 12px;
+}
+
+#footer-links li a {
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+
+#footer-links li a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	font-size: 12px;
+}
