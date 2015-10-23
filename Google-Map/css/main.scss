@@ -1,0 +1,33 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	   		border-radius: $radius;	
+}
+
+html, body, #map-canvas {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	height: 25px;
+	background-color: lighten(#000, 25%);
+	padding: 10px;
+	font-size: 20px;
+
+	label {
+		padding: 0 5px;
+	}
+
+	input {
+		margin-right: 10px;
+		font-size: 16px;
+		@include border-radius(5px);
+	}
+
+	button {
+		font-size: 16px;
+		@include border-radius(5px);
+	}
+}
