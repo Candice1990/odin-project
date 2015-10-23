@@ -1,0 +1,76 @@
+@import 'reset';
+
+@mixin buttons {
+	position: absolute;
+	cursor: pointer;
+	top: 300px;
+	border: 3px solid lighten(#000, 35%);
+	border-radius: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+
+	#slider {
+		width: 100%;
+		margin-top: 100px;
+		height: 550px;
+		overflow: hidden;
+
+		#prev {
+			@include buttons;
+			left: 325px;
+
+		}
+
+		#next {
+			@include buttons;
+			right: 325px;
+				}
+
+		ul {
+			padding: 0;
+			
+			li {
+				list-style-type: none;	
+				
+				img {
+					max-width: 100%;
+					max-height: 100%;
+
+				}
+
+			}
+
+		}
+
+	}
+	
+	#dots-container {
+		margin: 0 auto;
+		text-align: center;
+
+		.dots {
+			display: inline-block;
+			list-style-type: none;
+			padding: 5px;
+			border: 1px solid #000;
+			border-radius: 100%;
+			margin: 5px auto;
+			cursor: pointer;
+		}
+	}
+
+	.active {
+		background-color: #000;
+
+	}
+		
+}
