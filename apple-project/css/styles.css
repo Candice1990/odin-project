@@ -1,0 +1,145 @@
+/*****************************
+			General
+******************************/
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/*****************************
+			Nav
+******************************/
+
+nav ul {
+	padding: 0;
+	margin: 0 250px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 15px 25px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-weight: 300;
+}
+
+nav ul li a:hover {
+	color: #939393;
+}
+
+nav ul li img {
+	height: 18px;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*****************************
+		Main-Content
+******************************/
+
+.main-content {
+	background: url(../images/apple-watch.png) no-repeat 50% 50%;
+	height: 575px; 
+}
+
+.main-content h1, .main-content p {
+	text-align: center;
+}
+
+.main-content h1 img {
+	height: 48px;
+}
+
+.main-content h1 {
+	font-size: 48px;
+	margin: 50px 0 0 0;
+}
+
+.main-content p {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #818181;
+}
+
+.center {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.center a {
+	padding-right: 10px;
+	color: #08c;
+}
+
+.center a:hover {
+	text-decoration: underline;
+}
+
+/*****************************
+		Sub-Content
+******************************/
+
+.sub-content img {
+	width: 355px;
+	height: 200px;
+}
+
+.sub-content {
+	margin-top: 5px;
+}
+
+/*****************************
+			Footer
+******************************/
+
+footer a {
+	text-decoration: none;
+	color: #9b9b9b;
+	font-size: 11px;
+}
+
+footer a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+footer {
+	color: #b4b4b4;
+	font-size: 11px;
+	margin: 20px 0 0 200px;
+}
+
+footer ul {
+	float: right;
+	position: relative;
+	top: -65px;
+	margin-right: 200px;
+}
+
+footer ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 10px;
+	border-left: 1px solid #cecece;
+}
+
+footer ul li img {
+	height: 16px;
+}
