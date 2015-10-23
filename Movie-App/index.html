@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OMDB Movie LookUp</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<a href="#top" id="buttonTop">	
+		<i class="fa fa-arrow-up"></i>
+	</a>
+	<div class="container">
+		<div id="logo">
+			<div id="icon"></div>
+			<div id="movieAppLabel"></div>
+		</div>
+
+		<div id="holder">
+			<form action="http://www.omdbapi.com/?" method="post" target="_blank">
+				<fieldset>
+					<input type="text" id="movieName" name="search">
+					<a href="#" class="button" id="movieSearch">Search</a>
+					<a href="#" class="button" id="browse">Browse</a>
+				</fieldset>
+			</form>
+		</div>
+		<div class="spin"><i class="fa fa-spinner fa-spin"></i></div>
+		<div id="results"><p id="intro">This an app designed to look up movies by keyword or title. The search results will display ten at a time. You can also randomly browse through the OMDB database by clicking the browse button. To perform a search, you will need to enter at least two letters.</p></div>
+		<footer><span id="footerName">By: Ryan Jordan</span><span id="icon"><a href="mailto:ryjordan@gmail.com"><i class="fa fa-envelope"></i></a> <a href="http://github.com/krjordan"><i class="fa fa-github-square"></i></a></span></footer>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
